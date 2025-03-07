@@ -1,0 +1,267 @@
+.content .block:nth-child(1){ 
+	display: flex;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .block:nth-child(2){ 
+	/*background-color: #e4f0f5;*/
+  /*margin-top: 100px;*/
+}
+
+.block .head {
+	display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  padding: 15px 0;
+}
+
+
+
+
+/////////////////////
+//////////1 BLOCK
+
+#totalStatus {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 700px;
+}
+
+.totalPrintList {
+	    display: grid
+;
+    grid-template-areas:
+        "h a"
+        "h b"
+        "h c";
+    gap: 12px 12px;
+    width: 100%;
+    background-color: #e4edf3;
+    border: 1px #bde3f5 solid;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+
+.totalPrintList > .in {
+	width: 110px;
+padding: 10px;
+border-radius: 10px;
+font-weight: bold;
+}
+
+.totalPrintList > .in::before {
+	content: '';
+	padding: 0 30px 0 0;
+}
+
+.totalPrintList > .in b {
+  padding: 45px 30px;
+    text-align: center;
+    border-radius: 2px;
+    color: #112d7f;
+    font-size: 80px;
+    border-radius: 5px;
+    border: 1px #8d8d8d solid;
+}
+
+.totalPrintList > .in:nth-child(1) {
+	grid-area: h;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 150px;
+}
+
+
+//WB
+///////////////////////////////////
+
+.totalPrintList > .in:nth-child(2) {
+	grid-area: a;
+	background-color: #e600ff;
+}
+
+.totalPrintList > .in:nth-child(2)::after {
+	content: "WB";
+    position: absolute;
+    left: 10px;
+    margin-right: 10px;
+    background-color: #b519e2;
+    color: #fff;
+    padding: 3px;
+    border-radius: 8px;
+}
+
+
+//OZON
+///////////////////////////
+
+.totalPrintList > .in:nth-child(3) {
+	grid-area: b;
+	background-color: #001bff;
+	color: #fff;
+}
+
+.totalPrintList > .in:nth-child(3)::after {
+	content: "OZ";
+    position: absolute;
+    left: 10px;
+    margin-right: 10px;
+    background-color: #0059f6;
+    color: #fff;
+    padding: 3px;
+    border-radius: 8px;
+}
+
+//YANDEX
+///////////////////////////
+
+.totalPrintList > .in:nth-child(4) {
+	grid-area: c;
+	background-color: #f5e181;
+}
+
+.totalPrintList > .in:nth-child(4)::after {
+	content: "YA";
+    position: absolute;
+    left: 10px;
+    margin-right: 10px;
+    background-color: #f7d73f;
+    color: #000;
+    padding: 3px;
+    border-radius: 8px;
+}
+
+.collectingNow {
+	padding: 24px;
+    background-color: #cafffb;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+#totalStatus > .btn {
+	order: 1;
+	height: 42px;
+}
+
+input {
+	background-color: #a7ffd2;
+}
+
+.myPrintList {
+	background-color: #caebfb;
+}
+
+.totalStatusList {
+    background-color: #f3c6ab;
+}
+
+tbody a {
+	    font-size: 16px !important;
+}
+
+a img {
+	height: auto !important;
+  width: 275px;
+}
+
+/*table tr.total_tr td {
+    background: #94ef94;
+    font-weight: 700;
+    padding: 20px 3px;
+}*/
+
+#statBlock {
+	display: flex;
+  justify-content: center;
+}
+
+/*#weightForm input[type=button] {
+	height: 55px;
+}*/
+
+#weightForm .btn {
+	height: 55px;
+}
+
+
+////////////////////////////////////
+////////////////////////////////////
+///////////////STATE
+////////////////////////////////////
+
+#statBlock > table tr {
+	display: flex;
+}
+
+#statBlock > table th,td {
+	padding: 10px;
+	flex: 1;
+}
+
+////////////////////////////////////
+////////////////////////////////////
+///////////////БЛОК ДЛЯ ПЕЧАТИ и инфо по количеству заказов
+////////////////////////////////////
+
+.printButton {
+	    width: 105px;
+    height: 35px;
+    border-radius: 8px;
+    font-weight: bold;
+    background-color: #4c95ff;
+    color: #fff;
+}
+
+////////////////////////////////////
+////////////////////////////////////
+///////////////БЛОК КОРОБОВ
+////////////////////////////////////
+
+.boxSelection {
+	display: flex
+;
+    justify-content: space-between;
+    width: 700px;
+    /* height: 140px; */
+    /* background-color: #000; */
+    align-items: center;
+    /* background-color: antiquewhite; */
+    border-radius: 10px;
+    margin: 100px 0;
+    border: 1px #c3c3c3 solid;
+    flex-direction: column;
+    padding: 35px;
+}
+
+.boxSelectionBlock {
+	display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px 0 0 0;
+}
+
+.boxOptions {
+	    
+}
+
+.boxOptionsImg {
+	width: 50px;
+    height: 50px;
+    background: url(https://png.klev.club/uploads/posts/2024-05/thumbs/png-klev-club-s3ei-p-raspakovka-png-10.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.boxOptionsText {
+	font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
